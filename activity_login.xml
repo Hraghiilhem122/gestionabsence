@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Mode Connexion -->
+    <LinearLayout
+        android:id="@+id/loginLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Champ pour l'email de connexion -->
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp" />
+
+        <!-- Champ pour le mot de passe -->
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mot de passe"
+            android:inputType="textPassword" />
+
+        <!-- Bouton de connexion -->
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Se connecter" />
+
+        <!-- Lien pour basculer en mode inscription -->
+        <TextView
+            android:id="@+id/textSwitchToRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:clickable="true"
+            android:text="Pas encore de compte ? Inscrivez-vous"
+            android:textColor="#0277BD" />
+    </LinearLayout>
+
+    <!-- Mode Inscription -->
+    <LinearLayout
+        android:id="@+id/registerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <!-- Champ pour le nom -->
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nom"
+            android:inputType="textPersonName" />
+
+        <!-- Champ pour l'email d'inscription -->
+        <EditText
+            android:id="@+id/editTextRegisterEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <!-- Champ pour le mot de passe -->
+        <EditText
+            android:id="@+id/editTextRegisterPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mot de passe"
+            android:inputType="textPassword" />
+
+        <!-- Bouton pour l'inscription -->
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="S'enregistrer" />
+
+        <!-- Lien pour basculer en mode connexion -->
+        <TextView
+            android:id="@+id/textSwitchToLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Déjà un compte ? Connectez-vous"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_marginTop="16dp"
+            android:clickable="true" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/nomInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nom de l'enseignant" />
+
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email de l'enseignant" />
+
+    <Button
+        android:id="@+id/ajouterEnseignantBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ajouter Enseignant" />
+
+    <EditText
+        android:id="@+id/dateInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date d'absence" />
+
+    <EditText
+        android:id="@+id/motifInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Motif d'absence" />
+
+    <EditText
+        android:id="@+id/enseignantIdInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ID de l'enseignant" />
+
+    <Button
+        android:id="@+id/ajouterAbsenceBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ajouter Absence" />
+
+    <Button
+        android:id="@+id/afficherAbsencesBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Afficher Absences" />
+</LinearLayout>
